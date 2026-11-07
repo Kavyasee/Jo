@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My School Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f5ff;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2457a6;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #dce8ff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2457a6;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2457a6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2457a6;
+            color: white;
+        }
+
+        .hobby {
+            background-color: #e8f5ff;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        input, select {
+            padding: 9px;
+            margin: 8px 0;
+            width: 90%;
+        }
+
+        button {
+            background-color: #2457a6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+            height: 140px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2457a6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My School Website</h1>
+    <p>Welcome to My Simple Website</p>
+</header>
+
+<nav>
+    <a href="#table">Student Table</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#registration">Registration</a>
+    <a href="#gallery">Images</a>
+    <a href="#fruits">Fruits</a>
+</nav>
+
+<section>
+    <h2>Welcome</h2>
+    <p>This website contains five interesting pages.
+    Click the links above to explore them.</p>
+</section>
+
+<section id="table">
+    <h2>1. Student Details Table</h2>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Anu</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Ravi</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Meena</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <a href="#">Back to Top</a>
+</section>
+
+<section id="hobbies">
+    <h2>2. My Hobbies</h2>
+
+    <div class="hobby">
+        <h3>📚 Reading Books</h3>
+        <p>Reading books improves our knowledge.</p>
+    </div>
+
+    <div class="hobby">
+        <h3>⚽ Playing Football</h3>
+        <p>Playing games keeps us healthy.</p>
+    </div>
+
+    <div class="hobby">
+        <h3>🎵 Listening to Music</h3>
+        <p>Music makes us happy and relaxed.</p>
+    </div>
+
+    <div class="hobby">
+        <h3>🎨 Drawing</h3>
+        <p>Drawing develops creativity.</p>
+    </div>
+
+    <a href="#">Back to Top</a>
+</section>
+
+<section id="registration">
+    <h2>3. Student Registration Form</h2>
+
+    <form onsubmit="registerStudent(event)">
+
+        <label>Student Name:</label><br>
+        <input type="text" id="name"
+               placeholder="Enter your name" required>
+        <br>
+
+        <label>Age:</label><br>
+        <input type="number" min="3" max="25"
+               placeholder="Enter your age" required>
+        <br>
+
+        <label>Email:</label><br>
+        <input type="email"
+               placeholder="Enter your email" required>
+        <br>
+
+        <label>Select Class:</label><br>
+        <select required>
+            <option value="">Choose Class</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+            <option>9th</option>
+            <option>10th</option>
+        </select>
+        <br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <a href="#">Back to Top</a>
+</section>
+
+<section id="gallery">
+    <h2>4. Image Gallery</h2>
+
+    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500"
+         alt="Sunrise">
+
+    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500"
+         alt="Forest">
+
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500"
+         alt="Mountain">
+
+    <a href="#">Back to Top</a>
+</section>
+
+<section id="fruits">
+    <h2>5. Fruits Page</h2>
+
+    <h3>🍎 Apple</h3>
+    <p>Apple contains fibre.</p>
+
+    <h3>🍌 Banana</h3>
+    <p>Banana gives us energy.</p>
+
+    <h3>🍊 Orange</h3>
+    <p>Orange contains Vitamin C.</p>
+
+    <h3>🥭 Mango</h3>
+    <p>Mango is a delicious fruit.</p>
+
+    <h3>🍇 Grapes</h3>
+    <p>Grapes contain water and nutrients.</p>
+
+    <a href="#">Back to Top</a>
+</section>
+
+<footer>
+    <p>My School Website | HTML and CSS Project</p>
+</footer>
+
+<script>
+    function registerStudent(event) {
+        event.preventDefault();
+
+        var studentName =
+            document.getElementById("name").value;
+
+        document.getElementById("message").innerHTML =
+            "Thank you " + studentName +
+            "! Registration successful.";
+
+        event.target.reset();
+    }
+</script>
+
+</body>
+</html>
